@@ -10,7 +10,7 @@ A responsive Danish website for Julie Spanggaard Zielke, an udkørende klinisk d
 
 Open `index.html` in a browser to preview. GitHub Pages can publish this repository directly from the root of `main`.
 
-Before launch, add the remaining business information, finalize trading terms and subsidy reporting details, and review the supplied prices. The name, telephone number and email address are user-supplied. Keep the construction notices and `noindex, nofollow` on all three pages until launch is explicitly requested.
+Before launch, add the remaining business information, finalize trading terms, and review the supplied prices. The name, telephone number and email address are user-supplied. Keep the construction notices and `noindex, nofollow` on all three pages until launch is explicitly requested.
 
 Navigation, telephone links and the map work without JavaScript. The OpenStreetMap tiles require an internet connection and an HTTP(S) preview so browsers send the required Referer header. All internal paths are relative for GitHub Pages subpath support. Review all three pages at desktop and mobile sizes after shared CSS changes.
 
@@ -25,7 +25,7 @@ The home address is private. Do not publish it, label the circle center as a hom
 - The map shows a roughly 42 km-wide general service area near Viborg using Web Mercator tiles at zoom 11, exposing more small-town labels. The 15 km circle has a diameter of approximately 71.43% of the image width. The distance scale uses the latitude of the original public village center; local projection distortion across the circle is less than 0.3%. No home-address marker is shown.
 - The map circle is 15 km, as most recently requested. The travel surcharge starts beyond 15 km at 10 kr. per km beyond that threshold. Keep the travel pricing explicit. The user requested removal of the visible map caption; preserve radius information in the accessible description only.
 - Prices and preliminary cancellation wording come from the supplied handwritten reference; consultation duration, package contents, contact name, phone and travel radius include the user's corrections. The first consultation is 75 minutes and follow-ups are 35 minutes.
-- Subsidy information links to the [official provider](https://www.sygeforsikring.dk/tilskud-til-diaetist), checked 15 September 2026. No clinic registration, reimbursement handling or guaranteed insurance coverage is claimed.
+- Subsidy copy is adapted from user-supplied text. The 2026 rates for Groups 5, 1 and 2 (50% of own expense, at most 350 kr. per individual consultation and 2,100 kr. within 12 months) were checked against the [official provider](https://www.sygeforsikring.dk/tilskud/kliniske) on 15 September 2026. The user confirmed that Julie automatically reports consultations to “danmark” and accepts authorizations from all Danish health insurers. Do not reuse Diætisthuset's clinic or partnership claims for Julie's practice; insurance eligibility and consultation limits depend on each policy.
 
 ## Image prompts
 
