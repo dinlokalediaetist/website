@@ -4,15 +4,23 @@ A responsive Danish website for Julie Spanggaard Zielke, an udkørende klinisk d
 
 - `index.html`: main page with home visits, consultations, services, biography, prices, and contact information.
 - `tilskud-og-forsikring.html`: general subsidy and insurance information with a link to Sygeforsikringen “danmark”.
-- `handelsbetingelser.html`: preliminary cancellation and travel information; complete business terms are still pending.
+- `handelsbetingelser.html`: Danish draft terms for consultations and treatment packages, with explicit review notes; not yet approved as final terms.
 - `styles.css`: responsive layout and styling.
 - `images/`: two generated food photographs, the user-supplied `diaetist-portraet.png` used in “Om mig”, and a retained, unused SVG map. The active map uses OpenStreetMap tiles. The ingredients photograph is retained as an unused asset.
 
 Open `index.html` in a browser to preview. GitHub Pages can publish this repository directly from the root of `main`.
 
-Before launch, add the remaining business information, finalize trading terms, and review the supplied prices. The name, telephone number and email address are user-supplied. Keep the construction notices and `noindex, nofollow` on all three pages until launch is explicitly requested.
+Before launch, add the remaining business information, finalize trading terms, and review the supplied prices. The name, telephone number and email address are user-supplied. Keep the remaining draft notices and `noindex, nofollow` on all three pages until launch is explicitly requested.
 
 Navigation, telephone links and the map work without JavaScript. The OpenStreetMap tiles require an internet connection and an HTTP(S) preview so browsers send the required Referer header. All internal paths are relative for GitHub Pages subpath support. Review all three pages at desktop and mobile sizes after shared CSS changes.
+
+## Terms draft for review
+
+The draft dated 8 November 2026 concerns services: home visits, online consultations and consultation packages. It retains the supplied 24-hour cancellation rule and the travel surcharge after 15 km. It does not introduce product delivery, returns or warranty clauses.
+
+Before adoption, confirm business disclosures, booking acceptance and written confirmation, payment and VAT treatment, no-shows and illness, package validity and refund calculations, travel-distance calculation, insurance billing and video arrangements. Proposed new policies are explicitly labelled for approval. Have the service withdrawal section and complaints information reviewed; complete the standard withdrawal form and any early-start consent process. A separate privacy policy remains to be prepared for the actual systems used.
+
+The text links to official guidance from Forbrugerombudsmanden, Styrelsen for Patientsikkerhed and Styrelsen for Patientklager. Do not remove draft labels or treat undecided policies as business facts until the user provides the reviewed terms.
 
 ## Privacy
 
