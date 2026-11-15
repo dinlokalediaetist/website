@@ -22,6 +22,8 @@ This repository contains **Din lokale diætist**, a responsive Danish website fo
 - `images/diaetist-portraet.png`: user-supplied portrait in the “Om mig” section, with responsive CSS cropping.
 - `images/jylland-kort.svg`: retained earlier map, currently unused. The active OpenStreetMap tile grid and 15 km circle are in `index.html` and styled in `styles.css`.
 - `CNAME`: GitHub Pages custom domain configuration.
+- `sitemap.xml`: Google-compatible XML sitemap listing all three HTML pages with absolute HTTPS URLs. Update it when pages are added, removed, or renamed.
+- `robots.txt`: allows crawling and advertises the sitemap. All three pages permit indexing as explicitly requested by the user.
 - `.nojekyll`: disables Jekyll processing for static hosting.
 - `README.md`: preview instructions, launch notes, and original image prompts.
 - `AGENTS.md`: project structure and guidance for future changes.
@@ -60,7 +62,7 @@ There is no automated test suite or build command. Use checks appropriate to the
 - The user explicitly requested OpenStreetMap for the general service-area map. Use standard browser tile requests with visible attribution and caching; never send a private address or use geolocation.
 - The user’s home address is secret. Do not include it, identifying home details, address markers, or coordinate links. Do not label the service-area center as a home or clinic. Keep location data local unless the user explicitly authorizes an external lookup.
 
-- Keep the placeholder notices and `noindex, nofollow` metadata until the user requests launch with real content.
+- The user explicitly requested Google indexing. Keep all three HTML pages indexable; do not restore `noindex, nofollow` metadata. Preserve remaining draft and placeholder notices until the user supplies or approves final content.
 - Do not invent business credentials, testimonials, contact details, services, prices, or health claims. Current name, phone, email, services, biography and prices are user-supplied.
 - The map circle is 15 km within a 42 km-wide map view (about 71.43% of the image width), using OpenStreetMap zoom 11 for smaller-town labels. Use transparent town labels without white boxes and omit the map header. Supplemental label coordinates are documented in README; keep them aligned with the map projection. The travel surcharge starts after 15 km, at 10 kr. per km beyond that threshold. Keep the threshold consistent across the contact section and terms. Do not restore the visible map caption removed at the user’s request. Follow-ups are 35 minutes; the start package includes the first consultation plus three follow-ups.
 - Keep shared navigation and footer consistent across all three HTML pages. All internal links and assets must remain relative.

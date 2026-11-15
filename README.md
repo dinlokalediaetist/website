@@ -10,7 +10,7 @@ A responsive Danish website for Julie Spanggaard Zielke, an udkørende klinisk d
 
 Open `index.html` in a browser to preview. GitHub Pages can publish this repository directly from the root of `main`.
 
-Before launch, add the remaining business information, finalize trading terms, and review the supplied prices. The name, telephone number and email address are user-supplied. Keep the remaining draft notices and `noindex, nofollow` on all three pages until launch is explicitly requested.
+Before launch, add the remaining business information, finalize trading terms, and review the supplied prices. The name, telephone number and email address are user-supplied. Keep the remaining draft notices until final content is supplied or approved. Google indexing has been explicitly requested, and all three pages now permit indexing.
 
 Navigation, telephone links and the map work without JavaScript. The OpenStreetMap tiles require an internet connection and an HTTP(S) preview so browsers send the required Referer header. All internal paths are relative for GitHub Pages subpath support. Review all three pages at desktop and mobile sizes after shared CSS changes.
 
@@ -21,6 +21,12 @@ The draft dated 8 November 2026 concerns services: home visits, online consultat
 Before adoption, confirm business disclosures, booking acceptance and written confirmation, payment and VAT treatment, no-shows and illness, package validity and refund calculations, travel-distance calculation, insurance billing and video arrangements. Proposed new policies are explicitly labelled for approval. Have the service withdrawal section and complaints information reviewed; complete the standard withdrawal form and any early-start consent process. A separate privacy policy remains to be prepared for the actual systems used.
 
 The text links to official guidance from Forbrugerombudsmanden, Styrelsen for Patientsikkerhed and Styrelsen for Patientklager. Do not remove draft labels or treat undecided policies as business facts until the user provides the reviewed terms.
+
+## Sitemap and Google indexing
+
+`sitemap.xml` lists the homepage, subsidy and insurance page, and business terms page using absolute HTTPS URLs on `dinlokalediaetist.dk`. Update it whenever pages are added, removed, or renamed. `robots.txt` allows crawling and points search engines to the sitemap.
+
+After publishing through GitHub Pages, submit `https://dinlokalediaetist.dk/sitemap.xml` in Google Search Console for the verified domain. The user explicitly requested indexing, so the `noindex, nofollow` metadata has been removed from all three pages. Crawling and indexing are allowed; submitting the sitemap does not guarantee inclusion in Google results.
 
 ## Privacy
 
