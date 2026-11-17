@@ -7,6 +7,7 @@ A responsive Danish website for Julie Spanggaard Zielke, an udkørende klinisk d
 - `handelsbetingelser.html`: Danish draft terms for consultations and treatment packages, with explicit review notes; not yet approved as final terms.
 - `styles.css`: responsive layout and styling.
 - `favicon.png`, `favicon.ico`, and `apple-touch-icon.png`: generated olive-green botanical icons based on the supplied logo, shared by all three pages for search results, browser tabs, and home-screen bookmarks.
+- `images/logo.jpg`: original user-supplied logo, displayed in the header and footer on all three pages. Both placements link to the homepage; CSS preserves the complete square image and adjusts its size for mobile and desktop.
 - `images/`: two generated food photographs, the user-supplied `diaetist-portraet.png` used in “Om mig”, and a retained, unused SVG map. The active map uses OpenStreetMap tiles. The ingredients photograph is retained as an unused asset.
 
 Open `index.html` in a browser to preview. GitHub Pages can publish this repository directly from the root of `main`.

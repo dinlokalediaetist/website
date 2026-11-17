@@ -23,6 +23,7 @@ This repository contains **Din lokale diætist**, a responsive Danish website fo
 - `images/frokost.png`: hero food photograph.
 - `images/raavarer.png`: retained ingredients photograph, currently unused.
 - `images/diaetist-portraet.png`: user-supplied portrait in the “Om mig” section, with responsive CSS cropping.
+- `images/logo.jpg`: original user-supplied circular logo, shared by the header and footer on all three pages. Preserve the full artwork and its proportions.
 - `images/jylland-kort.svg`: retained earlier map, currently unused. The active OpenStreetMap tile grid and 15 km circle are in `index.html` and styled in `styles.css`.
 - `CNAME`: GitHub Pages custom domain configuration.
 - `sitemap.xml`: Google-compatible XML sitemap listing all three HTML pages with absolute HTTPS URLs. Update it when pages are added, removed, or renamed.
@@ -69,5 +70,6 @@ There is no automated test suite or build command. Use checks appropriate to the
 - Do not invent business credentials, testimonials, contact details, services, prices, or health claims. Current name, phone, email, services, biography and prices are user-supplied.
 - The map circle is 15 km within a 42 km-wide map view (about 71.43% of the image width), using OpenStreetMap zoom 11 for smaller-town labels. Use transparent town labels without white boxes and omit the map header. Supplemental label coordinates are documented in README; keep them aligned with the map projection. The travel surcharge starts after 15 km, at 10 kr. per km beyond that threshold. Keep the threshold consistent across the contact section and terms. Do not restore the visible map caption removed at the user’s request. Follow-ups are 35 minutes; the start package includes the first consultation plus three follow-ups.
 - Keep shared navigation and footer consistent across all three HTML pages. All internal links and assets must remain relative.
+- Use the supplied `images/logo.jpg` for the visible brand links; do not recreate it with text or substitute the simplified favicon. Header and footer logos link to the homepage, with responsive sizing in `styles.css`.
 - Preserve `CNAME` and `.nojekyll` when editing the site.
 - Update this guide and `README.md` whenever the file structure, preview process, or deployment approach changes. Documentation updates are manual.
