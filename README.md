@@ -6,6 +6,7 @@ A responsive Danish website for Julie Spanggaard Zielke, an udkørende klinisk d
 - `tilskud-og-forsikring.html`: general subsidy and insurance information with a link to Sygeforsikringen “danmark”.
 - `handelsbetingelser.html`: Danish draft terms for consultations and treatment packages, with explicit review notes; not yet approved as final terms.
 - `styles.css`: responsive layout and styling.
+- `favicon.png`, `favicon.ico`, and `apple-touch-icon.png`: generated green sprout icons shared by all three pages for search results, browser tabs, and home-screen bookmarks.
 - `images/`: two generated food photographs, the user-supplied `diaetist-portraet.png` used in “Om mig”, and a retained, unused SVG map. The active map uses OpenStreetMap tiles. The ingredients photograph is retained as an unused asset.
 
 Open `index.html` in a browser to preview. GitHub Pages can publish this repository directly from the root of `main`.
@@ -27,6 +28,12 @@ The text links to official guidance from Forbrugerombudsmanden, Styrelsen for Pa
 `sitemap.xml` lists the homepage, subsidy and insurance page, and business terms page using absolute HTTPS URLs on `dinlokalediaetist.dk`. Update it whenever pages are added, removed, or renamed. `robots.txt` allows crawling and points search engines to the sitemap.
 
 After publishing through GitHub Pages, submit `https://dinlokalediaetist.dk/sitemap.xml` in Google Search Console for the verified domain. The user explicitly requested indexing, so the `noindex, nofollow` metadata has been removed from all three pages. Crawling and indexing are allowed; submitting the sitemap does not guarantee inclusion in Google results.
+
+## Search and browser icons
+
+All three pages link to the same generated forest-green sprout icon, matching the site's green palette and existing sprout branding. `favicon.png` is 96×96 pixels for Google Search and modern browsers; `favicon.ico` includes 16×16, 32×32 and 48×48 fallbacks; `apple-touch-icon.png` is 180×180 for home-screen bookmarks. The asset was generated with the built-in image generation tool and exported to these sizes with ImageMagick.
+
+Keep the icon URLs stable and allow crawlers to fetch them. Publish the HTML and icon files together through GitHub Pages. After publication, the homepage can be submitted for recrawling through Google Search Console's URL Inspection tool. Google needs to recrawl the homepage and icon before the search result can change; favicon display and timing are determined by Google.
 
 ## Privacy
 
