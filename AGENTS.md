@@ -17,7 +17,7 @@ This repository contains **Din lokale diætist**, a responsive Danish website fo
 - `tilskud-og-forsikring.html`: general subsidy and insurance information, linking to the official provider.
 - `handelsbetingelser.html`: preliminary cancellation and travel details; complete terms are pending.
 - `styles.css`: shared design tokens, layout, component styles, and responsive rules.
-- `favicon.png`: generated forest-green sprout favicon, 96×96, linked from all three pages for browsers and Google Search. Keep its public URL stable.
+- `favicon.png`: generated olive-green leafy branch on an ivory background, based on the user-supplied logo, 96×96, linked from all three pages for browsers and Google Search. Keep its public URL stable.
 - `favicon.ico`: matching multi-resolution browser fallback (16×16, 32×32 and 48×48).
 - `apple-touch-icon.png`: matching 180×180 home-screen icon.
 - `images/frokost.png`: hero food photograph.

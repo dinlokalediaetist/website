@@ -6,7 +6,7 @@ A responsive Danish website for Julie Spanggaard Zielke, an udkørende klinisk d
 - `tilskud-og-forsikring.html`: general subsidy and insurance information with a link to Sygeforsikringen “danmark”.
 - `handelsbetingelser.html`: Danish draft terms for consultations and treatment packages, with explicit review notes; not yet approved as final terms.
 - `styles.css`: responsive layout and styling.
-- `favicon.png`, `favicon.ico`, and `apple-touch-icon.png`: generated green sprout icons shared by all three pages for search results, browser tabs, and home-screen bookmarks.
+- `favicon.png`, `favicon.ico`, and `apple-touch-icon.png`: generated olive-green botanical icons based on the supplied logo, shared by all three pages for search results, browser tabs, and home-screen bookmarks.
 - `images/`: two generated food photographs, the user-supplied `diaetist-portraet.png` used in “Om mig”, and a retained, unused SVG map. The active map uses OpenStreetMap tiles. The ingredients photograph is retained as an unused asset.
 
 Open `index.html` in a browser to preview. GitHub Pages can publish this repository directly from the root of `main`.
@@ -31,7 +31,7 @@ After publishing through GitHub Pages, submit `https://dinlokalediaetist.dk/site
 
 ## Search and browser icons
 
-All three pages link to the same generated forest-green sprout icon, matching the site's green palette and existing sprout branding. `favicon.png` is 96×96 pixels for Google Search and modern browsers; `favicon.ico` includes 16×16, 32×32 and 48×48 fallbacks; `apple-touch-icon.png` is 180×180 for home-screen bookmarks. The asset was generated with the built-in image generation tool and exported to these sizes with ImageMagick.
+All three pages link to the same generated olive-green leafy branch on a warm ivory background, based on the user-supplied logo. The branch is simplified and the lettering and surrounding circle are omitted so it remains legible at favicon sizes. `favicon.png` is 96×96 pixels for Google Search and modern browsers; `favicon.ico` includes 16×16, 32×32 and 48×48 fallbacks; `apple-touch-icon.png` is 180×180 for home-screen bookmarks. The asset was generated with the built-in image generation tool using the logo as a reference and exported to these sizes with ImageMagick.
 
 Keep the icon URLs stable and allow crawlers to fetch them. Publish the HTML and icon files together through GitHub Pages. After publication, the homepage can be submitted for recrawling through Google Search Console's URL Inspection tool. Google needs to recrawl the homepage and icon before the search result can change; favicon display and timing are determined by Google.
 
