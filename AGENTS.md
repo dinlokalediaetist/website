@@ -13,21 +13,23 @@ This repository contains **Din lokale diætist**, a responsive Danish website fo
 
 ## Files
 
+- `priser.html`: dedicated indexable prices page with consultations, packages, travel surcharge, and links to contact and subsidy information. Keep prices and durations consistent with the homepage.
+- `kontakt.html`: dedicated indexable contact page with phone, email, service area, and booking information; do not add a private address.
 - `index.html`: page metadata and Danish content, including navigation, hero, services, approach, pricing, contact section, and footer.
 - `tilskud-og-forsikring.html`: general subsidy and insurance information, linking to the official provider.
 - `handelsbetingelser.html`: preliminary cancellation and travel details; complete terms are pending.
 - `styles.css`: shared design tokens, layout, component styles, and responsive rules.
-- `favicon.png`: generated olive-green leafy branch on an ivory background, based on the user-supplied logo, 96×96, linked from all three pages for browsers and Google Search. Keep its public URL stable.
+- `favicon.png`: generated olive-green leafy branch on an ivory background, based on the user-supplied logo, 96×96, linked from all five pages for browsers and Google Search. Keep its public URL stable.
 - `favicon.ico`: matching multi-resolution browser fallback (16×16, 32×32 and 48×48).
 - `apple-touch-icon.png`: matching 180×180 home-screen icon.
 - `images/frokost.png`: hero food photograph.
 - `images/raavarer.png`: retained ingredients photograph, currently unused.
 - `images/diaetist-portraet.png`: user-supplied portrait in the “Om mig” section, with responsive CSS cropping.
-- `images/logo.jpg`: original user-supplied circular logo, shared by the header and footer on all three pages. Preserve the full artwork and its proportions.
+- `images/logo.jpg`: original user-supplied circular logo, shared by the header and footer on all five pages. Preserve the full artwork and its proportions.
 - `images/jylland-kort.svg`: retained earlier map, currently unused. The active OpenStreetMap tile grid and 15 km circle are in `index.html` and styled in `styles.css`.
 - `CNAME`: GitHub Pages custom domain configuration.
-- `sitemap.xml`: Google-compatible XML sitemap listing all three HTML pages with absolute HTTPS URLs. Update it when pages are added, removed, or renamed.
-- `robots.txt`: allows crawling and advertises the sitemap. All three pages permit indexing as explicitly requested by the user.
+- `sitemap.xml`: Google-compatible XML sitemap listing all five HTML pages with absolute HTTPS URLs. Update it when pages are added, removed, or renamed.
+- `robots.txt`: allows crawling and advertises the sitemap. All five pages permit indexing as explicitly requested by the user.
 - `.nojekyll`: disables Jekyll processing for static hosting.
 - `README.md`: preview instructions, launch notes, and original image prompts.
 - `AGENTS.md`: project structure and guidance for future changes.
@@ -66,10 +68,11 @@ There is no automated test suite or build command. Use checks appropriate to the
 - The user explicitly requested OpenStreetMap for the general service-area map. Use standard browser tile requests with visible attribution and caching; never send a private address or use geolocation.
 - The user’s home address is secret. Do not include it, identifying home details, address markers, or coordinate links. Do not label the service-area center as a home or clinic. Keep location data local unless the user explicitly authorizes an external lookup.
 
-- The user explicitly requested Google indexing. Keep all three HTML pages indexable; do not restore `noindex, nofollow` metadata. Preserve remaining draft and placeholder notices until the user supplies or approves final content.
+- The user explicitly requested Google indexing. Keep all five HTML pages indexable; do not restore `noindex, nofollow` metadata. Preserve remaining draft and placeholder notices until the user supplies or approves final content.
+- The user requested Google sitelinks for “Priser” and “Kontakt mig”. Keep these as dedicated pages linked from the shared header and footer, with unique titles, descriptions, and self-referencing canonical URLs. Include all five pages in the sitemap; the homepage canonical is the domain root. Google selects sitelinks automatically, so do not promise a specific layout or add unsupported sitelink markup. Preserve the homepage's existing `#priser` and `#kontakt` sections for old links.
 - Do not invent business credentials, testimonials, contact details, services, prices, or health claims. Current name, phone, email, services, biography and prices are user-supplied.
 - The map circle is 15 km within a 42 km-wide map view (about 71.43% of the image width), using OpenStreetMap zoom 11 for smaller-town labels. Use transparent town labels without white boxes and omit the map header. Supplemental label coordinates are documented in README; keep them aligned with the map projection. The travel surcharge starts after 15 km, at 10 kr. per km beyond that threshold. Keep the threshold consistent across the contact section and terms. Do not restore the visible map caption removed at the user’s request. Follow-ups are 35 minutes; the start package includes the first consultation plus three follow-ups.
-- Keep shared navigation and footer consistent across all three HTML pages. All internal links and assets must remain relative.
+- Keep shared navigation and footer consistent across all five HTML pages. All internal links and assets must remain relative.
 - Use the supplied `images/logo.jpg` for the visible brand links; do not recreate it with text or substitute the simplified favicon. Keep it compact: 80 px in the desktop header, 72 px in the mobile header, and 64 px in the footer. Header and footer logos link to the homepage. Keep the HTML image dimensions small as a fallback and update the shared stylesheet URL's version when changing logo sizing so returning visitors receive the change.
 - Preserve `CNAME` and `.nojekyll` when editing the site.
 - Update this guide and `README.md` whenever the file structure, preview process, or deployment approach changes. Documentation updates are manual.

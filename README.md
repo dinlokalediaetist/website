@@ -1,20 +1,22 @@
 # Din lokale diætist
 
-A responsive Danish website for Julie Spanggaard Zielke, an udkørende klinisk diætist near Viborg. Built with plain HTML and CSS for GitHub Pages. No build step, JavaScript, or package installation is required. The site remains under construction and is not indexed by search engines.
+A responsive Danish website for Julie Spanggaard Zielke, an udkørende klinisk diætist near Viborg. Built with plain HTML and CSS for GitHub Pages. No build step, JavaScript, or package installation is required. Search indexing is enabled for all five pages.
 
+- `priser.html`: prices for consultations and packages, with travel and subsidy information.
+- `kontakt.html`: telephone, email, service area, and appointment information.
 - `index.html`: main page with home visits, consultations, services, biography, prices, and contact information.
 - `tilskud-og-forsikring.html`: general subsidy and insurance information with a link to Sygeforsikringen “danmark”.
 - `handelsbetingelser.html`: Danish draft terms for consultations and treatment packages, with explicit review notes; not yet approved as final terms.
 - `styles.css`: responsive layout and styling.
-- `favicon.png`, `favicon.ico`, and `apple-touch-icon.png`: generated olive-green botanical icons based on the supplied logo, shared by all three pages for search results, browser tabs, and home-screen bookmarks.
-- `images/logo.jpg`: original user-supplied logo, displayed in the header and footer on all three pages. Both placements link to the homepage; the full square image is shown at 80 px in the desktop header, 72 px in the mobile header, and 64 px in the footer. The stylesheet URL has a version query so returning visitors receive the compact sizing.
+- `favicon.png`, `favicon.ico`, and `apple-touch-icon.png`: generated olive-green botanical icons based on the supplied logo, shared by all five pages for search results, browser tabs, and home-screen bookmarks.
+- `images/logo.jpg`: original user-supplied logo, displayed in the header and footer on all five pages. Both placements link to the homepage; the full square image is shown at 80 px in the desktop header, 72 px in the mobile header, and 64 px in the footer. The stylesheet URL has a version query so returning visitors receive the compact sizing.
 - `images/`: two generated food photographs, the user-supplied `diaetist-portraet.png` used in “Om mig”, and a retained, unused SVG map. The active map uses OpenStreetMap tiles. The ingredients photograph is retained as an unused asset.
 
 Open `index.html` in a browser to preview. GitHub Pages can publish this repository directly from the root of `main`.
 
-Before launch, add the remaining business information, finalize trading terms, and review the supplied prices. The name, telephone number and email address are user-supplied. Keep the remaining draft notices until final content is supplied or approved. Google indexing has been explicitly requested, and all three pages now permit indexing.
+Before launch, add the remaining business information, finalize trading terms, and review the supplied prices. The name, telephone number and email address are user-supplied. Keep the remaining draft notices until final content is supplied or approved. Google indexing has been explicitly requested, and all five pages now permit indexing.
 
-Navigation, telephone links and the map work without JavaScript. The OpenStreetMap tiles require an internet connection and an HTTP(S) preview so browsers send the required Referer header. All internal paths are relative for GitHub Pages subpath support. Review all three pages at desktop and mobile sizes after shared CSS changes.
+Navigation, telephone links and the map work without JavaScript. The OpenStreetMap tiles require an internet connection and an HTTP(S) preview so browsers send the required Referer header. All internal paths are relative for GitHub Pages subpath support. Review all five pages at desktop and mobile sizes after shared CSS changes.
 
 ## Terms draft for review
 
@@ -26,13 +28,17 @@ The text links to official guidance from Forbrugerombudsmanden, Styrelsen for Pa
 
 ## Sitemap and Google indexing
 
-`sitemap.xml` lists the homepage, subsidy and insurance page, and business terms page using absolute HTTPS URLs on `dinlokalediaetist.dk`. Update it whenever pages are added, removed, or renamed. `robots.txt` allows crawling and points search engines to the sitemap.
+`sitemap.xml` lists the homepage, prices, contact, subsidy and insurance, and business terms pages using absolute HTTPS URLs on `dinlokalediaetist.dk`. Update it whenever pages are added, removed, or renamed. `robots.txt` allows crawling and points search engines to the sitemap.
 
-After publishing through GitHub Pages, submit `https://dinlokalediaetist.dk/sitemap.xml` in Google Search Console for the verified domain. The user explicitly requested indexing, so the `noindex, nofollow` metadata has been removed from all three pages. Crawling and indexing are allowed; submitting the sitemap does not guarantee inclusion in Google results.
+After publishing through GitHub Pages, submit `https://dinlokalediaetist.dk/sitemap.xml` in Google Search Console for the verified domain. The user explicitly requested indexing, so the `noindex, nofollow` metadata has been removed from all five pages. Crawling and indexing are allowed; submitting the sitemap does not guarantee inclusion in Google results.
+
+The shared menu and footer link directly to the dedicated `priser.html` and `kontakt.html` pages, labelled “Priser” and “Kontakt mig”. Relevant homepage links also lead to these pages; existing `#priser` and `#kontakt` sections still work. Keep prices, package contents, durations, travel charges, and contact details consistent when editing either the homepage or dedicated pages. All five pages have unique titles and descriptions and self-referencing canonical URLs, with the domain root as the homepage canonical.
+
+[Google sitelinks](https://developers.google.com/search/docs/appearance/sitelinks) are selected automatically from the site's structure and the user's search. Dedicated pages, descriptive links, and the sitemap help discovery but cannot guarantee sitelinks, their labels, layout, or timing. Once published, request indexing for the homepage, prices, and contact pages through Google Search Console and resubmit the sitemap. No special sitelink markup or search box has been added.
 
 ## Search and browser icons
 
-All three pages link to the same generated olive-green leafy branch on a warm ivory background, based on the user-supplied logo. The branch is simplified and the lettering and surrounding circle are omitted so it remains legible at favicon sizes. `favicon.png` is 96×96 pixels for Google Search and modern browsers; `favicon.ico` includes 16×16, 32×32 and 48×48 fallbacks; `apple-touch-icon.png` is 180×180 for home-screen bookmarks. The asset was generated with the built-in image generation tool using the logo as a reference and exported to these sizes with ImageMagick.
+All five pages link to the same generated olive-green leafy branch on a warm ivory background, based on the user-supplied logo. The branch is simplified and the lettering and surrounding circle are omitted so it remains legible at favicon sizes. `favicon.png` is 96×96 pixels for Google Search and modern browsers; `favicon.ico` includes 16×16, 32×32 and 48×48 fallbacks; `apple-touch-icon.png` is 180×180 for home-screen bookmarks. The asset was generated with the built-in image generation tool using the logo as a reference and exported to these sizes with ImageMagick.
 
 Keep the icon URLs stable and allow crawlers to fetch them. Publish the HTML and icon files together through GitHub Pages. After publication, the homepage can be submitted for recrawling through Google Search Console's URL Inspection tool. Google needs to recrawl the homepage and icon before the search result can change; favicon display and timing are determined by Google.
 

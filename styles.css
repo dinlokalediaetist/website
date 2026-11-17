@@ -134,6 +134,14 @@ img{display:block;width:100%;object-fit:cover}
 .document p+p{margin-top:16px}
 .document li{line-height:1.8;margin-bottom:12px;color:var(--muted-foreground)}
 .document p a{text-decoration:underline;text-underline-offset:3px}
+.detail-page{padding-block:54px 80px;min-height:65vh}
+.page-intro{max-width:760px;margin-bottom:40px}
+.page-intro h1{font-size:clamp(2.7rem,5vw,4.5rem);margin-bottom:24px;overflow-wrap:anywhere}
+.page-section+.page-section{margin-top:40px;padding-top:32px;border-top:1px solid var(--border)}
+.page-section>h2{font-size:clamp(1.8rem,3vw,2.5rem);margin-bottom:24px;letter-spacing:-.035em}
+.page-section>p+p{margin-top:16px}
+.contact-page-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start}
+.contact-page-grid .text-link{overflow-wrap:anywhere}
 @media(min-width:1500px){.hero{padding-top:60px}.hero-image{height:570px}}
 @media(max-width:1100px){.wrap{width:calc(100% - 64px)}.site-header{flex-wrap:wrap;gap:20px;padding-block:16px}.site-header nav{gap:22px}.hero{gap:35px}.hero-image{height:500px}.hero h1{font-size:4rem}.approach-copy{padding:40px 35px}.price-card{padding:26px 20px}.contact-inner{gap:40px}.intro{gap:40px}.values{font-size:13px}.pricing-notes{display:block}.pricing-notes .text-link{margin-top:16px}}
 @media(max-width:760px){
@@ -154,6 +162,7 @@ img{display:block;width:100%;object-fit:cover}
   .contact-inner{grid-template-columns:1fr;gap:38px;padding-block:54px}.contact-details>div{grid-template-columns:75px 1fr}
   .site-footer{flex-wrap:wrap;gap:18px;padding-block:20px}.site-footer p{order:3;flex-basis:100%;max-width:none}.site-footer>span{margin-left:auto}
   .document{padding-block:40px 64px}.back-link{margin-bottom:32px}
+  .detail-page{padding-block:40px 64px}.contact-page-grid{grid-template-columns:1fr;gap:40px}
 }
 @media(max-width:370px){.help-list{grid-template-columns:1fr}.hero h1{font-size:2.85rem}.hero-image{height:360px}.hero-note .note-line{display:none}.button{font-size:13px;padding:16px;gap:12px}.image-label{font-size:9px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
